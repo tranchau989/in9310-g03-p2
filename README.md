@@ -10,7 +10,7 @@ There is an example of a CI pipeline built in this branch as well.  See `.github
 
 In your own repository, you can setup different variables to change the behavior of the workflow.  In particular, you can change the defaul name of the report (`report`) that will be used to build the PDF.  The variable `FILE` corresponds to the name of the main `.tex` file and the final name of the built PDF.
 
-Similarly, `PROGRAM` defaults to `pdflatex`, but it can be changed to use any other engine to build your report.
+Similarly, `ENGINE` defaults to `pdflatex`, but it can be changed to use any other engine to build your report.
 
 You should go to `Settings -> Secrets and variables-> Variables` and create the intended varibles pointing to the new values.  The local variables will override the ones from the group.
 
