@@ -10,6 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Compile PDF
+        run: echo "compiling $FILE with $ENGINE"
         run: latexmk -pdf -pdflatex="$ENGINE --shell-escape %O %S" $FILE
       - name: Move
         run: mkdir -p artifacts && mv $FILE.pdf ./artifacts/
